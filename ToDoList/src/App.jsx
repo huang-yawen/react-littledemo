@@ -4,15 +4,16 @@ import "./App.css";
 // import Weather from "./compenent/weather";
 // import ShopCar from "./redo/shopcar";
 // import Weather from './redo/weather'
-import RollClock from "./compenent/rollclock";
-
+// import RollClock from "./compenent/rollclock";
+import UseRefPractise from "./compenent/useRefPractise";
 function App() {
   return (
     <>
       {/* <ToDolist /> */}
       {/* <Weather/> */}
-    <RollClock />
+    {/* <RollClock /> */}
       {/* <ShopCar /> */}
+      <UseRefPractise />
     </>
   );
 }

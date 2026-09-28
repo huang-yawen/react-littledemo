@@ -13,6 +13,7 @@ function RollBack() {
     return () => {
       clearInterval(flag);
     };
+    // 结束这次副作用之前的收尾
   }, [running, timer]);
   return (
     <>
