@@ -5,16 +5,15 @@ function RollClock() {
   const [running,setRunning]=useState(false)
   useEffect(()=>{
     let flag
-    if(running===true){
+    if(running&&timer>0){
         flag=setTimeout(()=>{
-            // setTimer(0)
             setTimer(prev=>prev-1)
-            clearTimeout(flag)
-        },timer)
+        },1000)
     }else{
-        // clearTimeout(flag)
+        //
     }
-  },[running])
+    return ()=>{clearInterval(flag)}
+  },[running,timer])
   const handleStop=()=>{
     setRunning(false)
     setTimer(10)
