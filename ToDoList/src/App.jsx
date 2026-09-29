@@ -6,8 +6,10 @@ import "./App.css";
 // import Weather from './redo/weather'
 // import RollClock from "./compenent/rollclock";
 // import UseRefPractise from "./compenent/useRefPractise";
-import { UserInfo } from "./context";
-import UseContextPractise from "./compenent/useContextPractise";
+// import { UserInfo } from "./context";
+// import UseContextPractise from "./compenent/useContextPractise";
+// import UseMemoPractise from "./compenent/useMemoPractise";
+import UseCallBackPractise from "./compenent/useCallbackPractise";
 function App() {
   return (
     <>
@@ -16,9 +18,11 @@ function App() {
     {/* <RollClock /> */}
       {/* <ShopCar /> */}
       {/* <UseRefPractise /> */}
-      <UserInfo.Provider value="小红">
+      {/* <UserInfo.Provider value="小红">
         <UseContextPractise />
-      </UserInfo.Provider>
+      </UserInfo.Provider> */}
+      {/* <UseMemoPractise /> */}
+      <UseCallBackPractise />
     </>
   );
 }
